@@ -5,36 +5,65 @@
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="https://use.typekit.net/uqv2ovt.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="./projectsBlur.js"></script>
-    </head>
+        <script src="./projectsOnHover.js"></script>
     <body>
         <header>
-            <a id="nameContainer" href="index.html">
-                <h4 id="name">Daria Brandenburg</h4>
-            </a>
             <nav>
-                <a class="navItem" href="whoAmI.html">
-                    <h6>Who am I</h6>
-                </a>
-                <a class="navItem highlightContainer" href="projects.html">
-                    <div class="highlightBefore">
-                        <h6>Projects</h6>
-                    </div>
-                    <h6 class="highlightAfter">Projects</h6>
-                </a>
-                <a class="navItem" href="resume.html">
-                    <h6>Resume</h6>
-                </a>
-                <a class="navItem" href="contact.html">
-                    <h6>Contact</h6>
-                </a>
+                <ul id="navList">
+                    <li id="navListName">
+                        <a id="nameContainer" href="index.html">
+                            <h4 id="name">Daria Brandenburg</h4>
+                        </a>
+                    </li>
+                    <li class="navListItem">
+                        <a class="navItem" href="whoAmI.html">
+                            <h6>Who am I</h6>
+                        </a>
+                    </li>
+                    <li class="navListItem">
+                        <a class="navItem highlightContainer" href="projects.html">
+                            <div class="highlightBefore">
+                                <h6>Projects</h6>
+                            </div>
+                            <h6 class="highlightAfter">Projects</h6>
+                        </a>
+                    </li>
+                    <li class="navListItem">
+                        <a class="navItem" href="resume.html">
+                            <h6>Resume</h6>
+                        </a>
+                    </li>
+                    <li class="navListItem">
+                        <a class="navItem" href="contact.html">
+                            <h6>Contact</h6>
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </header>
+        <div>
+            <a class="backButton" href="projects.html">
+                <img class="backArrow" src="elements-used/left-chevron.png" srcAlt="elements-used/left-chevron-green.png">
+            </a>
+        </div>
         <div id="creativeCodeContainer">
             <div>
-                <img class="creativeCodeOverview" src="elements-used/creativeCodeOverview/interractivePatternsCreativeCode.png">
-                <img class="creativeCodeOverview" src="elements-used/creativeCodeOverview/circleCreativeCode.png">
-                <img class="creativeCodeOverview" src="elements-used/creativeCodeOverview/stroboLightCreativeCode.png">
+                <a class="creativeCodeBox" href="https://www.openprocessing.org/sketch/1049067" target="_blank">
+                    <img class="creativeCodeOverview" src="elements-used/creativeCodeOverview/interactivePatterns.jpg" srcAlt="elements-used/creativeCodeOverview/sourceAlt/interactivePatterns">
+                    <h6 class="creativeCodeTitles">Interactive Patterns</h6>
+                </a>
+            </div>
+            <div>
+                <a class="creativeCodeBox" href="https://www.openprocessing.org/sketch/1049071" target="_blank">
+                    <img class="creativeCodeOverview" src="elements-used/creativeCodeOverview/cirlce.jpg" srcAlt="elements-used/creativeCodeOverview/sourceAlt/circle">
+                    <h6 class="creativeCodeTitles">Circle</h6>
+                </a>
+            </div>
+            <div>
+                <a class="creativeCodeBox" href="https://www.openprocessing.org/sketch/1049073" target="_blank">
+                    <img class="creativeCodeOverview" src="elements-used/creativeCodeOverview/stroboLight.jpg" srcAlt="elements-used/creativeCodeOverview/sourceAlt/stroboLight">
+                    <h6 class="creativeCodeTitles">Strobo Light</h6>
+                </a>
             </div>
         </div>
     </body>

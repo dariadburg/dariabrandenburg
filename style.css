@@ -63,13 +63,20 @@ h6 {
     text-transform: uppercase;
     font-size: 16px;
 }
+.descriptionContainer {
+
+    font-family: degular, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
+    padding-left: 140px;
+}
 
 /* HEADER */
 header {
     height: 15%;
 }
 #nameContainer {
-    margin-top: 20px;
     margin-left: 20px;
     display:inline-block;
 }
@@ -83,6 +90,29 @@ nav {
     float: right;
     margin-top: 20px;
     margin-right: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#navList {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#navListName {
+    float: left;
+}
+.navListItem {
+    float: right;
+    margin: 0px 16px;
+}
+.navList a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 #nameContainer:link, #nameContainer:visited, #nameContainer:active,
 .navItem:link, .navItem:visited, .navItem:active {
@@ -118,7 +148,6 @@ nav {
     width: 100%;
     transform: translate(0, -50%);
     margin: 0;
-
     display: flex;
     align-items: center;
     text-align: center;
@@ -174,11 +203,9 @@ nav {
 .whoAmIContainer {
     width: 100%;
     height: 550px;
-
     display: flex;
     flex-flow: row-reverse nowrap;
     align-items: center;
-
     padding-top: 20px;
 }
 .italicContainer {
@@ -186,7 +213,6 @@ nav {
     font-weight: 200;
     font-style: italic;
     font-size: 20px;
-
     padding-left: 140px;
 }
 .normalContainer {
@@ -195,14 +221,12 @@ nav {
     font-style: normal;
     font-size: 20px;
     color:black;
-
     padding-left: 140px;
     padding-right: 140px;
 }
 .profilePicture {
     width: 400px;
     height: 400px;
-
     padding-left: 140px;
 }
 
@@ -222,102 +246,150 @@ nav {
     font-weight: 200;
     font-style: italic;
     font-size: 20px;
-
     padding-left: 45px;
 }
-
 #descriptionResumeChange {
     padding: 0;
 }
 .resumeContainer {
     width: 80%;
     height: 550px;
-
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-
     padding-top: 100px;
     padding-left:140px;
 }
 #resumeRowTwo{
-    padding-top: 240px;
+    margin-top: 240px;
     padding-left: 120px;
     padding-bottom: 50px;
 }
 
-/* EXPERIENCE OVERVIEW */
-#experienceContainer {
-    width: 100%;
-    height: 550px;
-
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    
-    padding-top: 20px;
-}
-.experienceOverview {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-
-    padding: 80px;
-}
-
 /* PHOTOGRAPY OVERVIEW */
+.backButton:hover {
+    color: #80FF00;
+}
+.backArrow {
+    height: 28px;
+    margin-left: 76px;
+}
 #photographyContainer {
-    width: 100%;
-    height: 550px;
-
     display: flex;
-    flex-flow: column nowrap;
+    flex-wrap: wrap;
+    align-content: center;
     align-items: center;
-    
-    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.photographyBox {
+    text-decoration: none;
 }
 .photographyOverview {
-    width: 150px;
-    height: 150px;
+    width: 304px;
+    height: 436px;
     object-fit: cover;
-
-    padding: 80px;
+    margin-top: 80px;
+    margin-left: 85px;
+    margin-right: 85px;
+}
+.photographyTitles {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
 }
 
 /* CREATIVE CODE */
 #creativeCodeContainer {
-    width: 100%;
-    height: 550px;
-
     display: flex;
-    flex-flow: column nowrap;
+    flex-wrap: wrap;
+    align-content: center;
     align-items: center;
-    
-    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.creativeCodeBox {
+    text-decoration: none;
 }
 .creativeCodeOverview {
-    width: 150px;
-    height: 150px;
+    width: 304px;
+    height: 436px;
     object-fit: cover;
-
-    padding: 80px;
+    margin-top: 80px;
+    margin-left: 85px;
+    margin-right: 85px;
+}
+.creativeCodeTitles {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
 }
 
 /* ILLUSTRATIONS */
 #illustrationsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.illustrationsOverivew {
+    width: 310px;
+    height: 310px;
+    object-fit: cover;
+    padding: 80px;
+}
+
+/* EXPERIENCE OVERVIEW */
+#experienceContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.experienceBox {
+    text-decoration: none;
+}
+.experienceOverview {
+    width: 310px;
+    height: 310px;
+    object-fit: cover;
+    padding: 80px;
+}
+.experienceTitles {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+/*PHOTOGRAPHY - SCULPTURAL BODIES*/
+.sculpturalBodiesContainer {
     width: 100%;
     height: 550px;
-
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row-reverse nowrap;
     align-items: center;
-    
     padding-top: 20px;
 }
-.illustrationsOverview {
-    width: 150px;
-    height: 150px;
+.sculpturalBodiesPhotography {
+    width: 404px;
+    height: 550px;
     object-fit: cover;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 55px;
+}
 
-    padding: 80px;
+/*PHOTOGRAPHY - MOROCCO*/
+.moroccoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 100px;
 }

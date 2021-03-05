@@ -5,40 +5,77 @@
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="https://use.typekit.net/uqv2ovt.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="./projectsBlur.js"></script>
-    </head>
+        <script src="./projectsOnHover.js"></script>
     <body>
         <header>
-            <a id="nameContainer" href="index.html">
-                <h4 id="name">Daria Brandenburg</h4>
-            </a>
             <nav>
-                <a class="navItem" href="whoAmI.html">
-                    <h6>Who am I</h6>
-                </a>
-                <a class="navItem highlightContainer" href="projects.html">
-                    <div class="highlightBefore">
-                        <h6>Projects</h6>
-                    </div>
-                    <h6 class="highlightAfter">Projects</h6>
-                </a>
-                <a class="navItem" href="resume.html">
-                    <h6>Resume</h6>
-                </a>
-                <a class="navItem" href="contact.html">
-                    <h6>Contact</h6>
-                </a>
+                <ul id="navList">
+                    <li id="navListName">
+                        <a id="nameContainer" href="index.html">
+                            <h4 id="name">Daria Brandenburg</h4>
+                        </a>
+                    </li>
+                    <li class="navListItem">
+                        <a class="navItem" href="whoAmI.html">
+                            <h6>Who am I</h6>
+                        </a>
+                    </li>
+                    <li class="navListItem">
+                        <a class="navItem highlightContainer" href="projects.html">
+                            <div class="highlightBefore">
+                                <h6>Projects</h6>
+                            </div>
+                            <h6 class="highlightAfter">Projects</h6>
+                        </a>
+                    </li>
+                    <li class="navListItem">
+                        <a class="navItem" href="resume.html">
+                            <h6>Resume</h6>
+                        </a>
+                    </li>
+                    <li class="navListItem">
+                        <a class="navItem" href="contact.html">
+                            <h6>Contact</h6>
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </header>
+        <div>
+            <a class="backButton" href="projects.html">
+                <img class="backArrow" src="elements-used/left-chevron.png" srcAlt="elements-used/left-chevron-green.png">
+            </a>
+        </div>
         <div id="photographyContainer">
             <div>
-                <img class="photographyOverview" src="elements-used/photographyOverview/sculpturalBodiesPhotography.jpg">
-                <img class="photographyOverview" src="elements-used/photographyOverview/moroccoPhotography.jpg">
-                <img class="photographyOverview" src="elements-used/photographyOverview/documentaryPhotography.png">
+                <a class="photographyBox" href="sculpturalBodies.html">
+                    <img class="photographyOverview" src="elements-used/photographyOverview/sculpturalBodiesPhotography.jpg" srcAlt="elements-used/photographyOverview/sourceAlt/sculpturalBodies">
+                    <h6 class="photographyTitles">Sculptural Bodies</h6>
+                </a>
             </div>
             <div>
-                <img class="photographyOverview" src="elements-used/photographyOverview/bauhausPhotography.png">
-                <img class="photographyOverview" src="elements-used/photographyOverview/travelsPhotography.jpg">
+                <a class="photographyBox" href="morocco.html">
+                    <img class="photographyOverview" src="elements-used/photographyOverview/moroccoPhotography.jpg" srcAlt="elements-used/photographyOverview/sourceAlt/morocco">
+                    <h6 class="photographyTitles">Morocco</h6>
+                </a>
+            </div>
+            <div>
+                <a class="photographyBox" href="documentary.html">
+                    <img class="photographyOverview" src="elements-used/photographyOverview/documentaryPhotography.png" srcAlt="elements-used/photographyOverview/sourceAlt/documentary">
+                    <h6 class="photographyTitles">Documentary</h6>
+                </a>
+            </div>
+            <div>
+                <a class="photographyBox" href="bauhaus.html">
+                    <img class="photographyOverview" src="elements-used/photographyOverview/bauhausPhotography.png" srcAlt="elements-used/photographyOverview/sourceAlt/bauhaus">
+                    <h6 class="photographyTitles">Bauhaus</h6>
+                </a>
+            </div>
+            <div>
+                <a class="photographyBox" href="travels.html">
+                <img class="photographyOverview" src="elements-used/photographyOverview/travelsPhotography.jpg" srcAlt="elements-used/photographyOverview/sourceAlt/travels">
+                <h6 class="photographyTitles">Travels</h6>
+            </a>
             </div>
         </div>
     </body>

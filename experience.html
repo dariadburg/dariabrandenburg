@@ -5,37 +5,65 @@
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="https://use.typekit.net/uqv2ovt.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="./projectsBlur.js"></script>
-    </head>
+        <script src="./projectsOnHover.js"></script>
     <body>
         <header>
-            <a id="nameContainer" href="index.html">
-                <h4 id="name">Daria Brandenburg</h4>
-            </a>
             <nav>
-                <a class="navItem" href="whoAmI.html">
-                    <h6>Who am I</h6>
-                </a>
-                <a class="navItem highlightContainer" href="projects.html">
-                    <div class="highlightBefore">
-                        <h6>Projects</h6>
-                    </div>
-                    <h6 class="highlightAfter">Projects</h6>
-                </a>
-                <a class="navItem" href="resume.html">
-                    <h6>Resume</h6>
-                </a>
-                <a class="navItem" href="contact.html">
-                    <h6>Contact</h6>
-                </a>
+                <ul id="navList">
+                    <li id="navListName">
+                        <a id="nameContainer" href="index.html">
+                            <h4 id="name">Daria Brandenburg</h4>
+                        </a>
+                    </li>
+                    <li class="navListItem">
+                        <a class="navItem" href="whoAmI.html">
+                            <h6>Who am I</h6>
+                        </a>
+                    </li>
+                    <li class="navListItem">
+                        <a class="navItem highlightContainer" href="projects.html">
+                            <div class="highlightBefore">
+                                <h6>Projects</h6>
+                            </div>
+                            <h6 class="highlightAfter">Projects</h6>
+                        </a>
+                    </li>
+                    <li class="navListItem">
+                        <a class="navItem" href="resume.html">
+                            <h6>Resume</h6>
+                        </a>
+                    </li>
+                    <li class="navListItem">
+                        <a class="navItem" href="contact.html">
+                            <h6>Contact</h6>
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </header>
+        <div>
+            <a class="backButton" href="projects.html">
+                <img class="backArrow" src="elements-used/left-chevron.png" srcAlt="elements-used/left-chevron-green.png">
+            </a>
+        </div>
         <div id="experienceContainer">
             <div>
-                <img class="experienceOverview" src="elements-used/experienceOverview/stressExperience.png">
-                <img class="experienceOverview" src="elements-used/experienceOverview/playgroundExperience.png">
-                <img class="experienceOverview" src="elements-used/experienceOverview/plantHouseExperience.png">
-                <img class="experienceOverview" src="elements-used/experienceOverview/imaginaryExhibitionExperience.png">
+                <a class="experienceBox" href="plantHouse.html">
+                    <img class="experienceOverview" src="elements-used/experienceOverview/plantHouse.jpg" srcAlt="elements-used/experienceOverview/sourceAlt/plantHouse.gif">
+                    <h6 class="creativeCodeTitles">Plant House</h6>
+                </a>
+            </div>
+            <div>
+                <a class="experienceBox" href="playground.html">
+                    <img class="experienceOverview" src="elements-used/experienceOverview/playground.png" srcAlt="elements-used/experienceOverview/sourceAlt/playground">
+                    <h6 class="creativeCodeTitles">Playground</h6>
+                </a>
+            </div>
+            <div>
+                <a class="experienceBox" href="stress.html">
+                    <img class="experienceOverview" src="elements-used/experienceOverview/stress.png" srcAlt="elements-used/experienceOverview/sourceAlt/stress">
+                    <h6 class="creativeCodeTitles">Stressful Spectrum</h6>
+                </a>
             </div>
         </div>
     </body>
